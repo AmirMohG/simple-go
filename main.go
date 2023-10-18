@@ -19,7 +19,7 @@ func main() {
 
 		// Generate a random number
 		rand.Seed(time.Now().UnixNano())
-		randomNumber := rand.Intn(100)
+		randomNumber := rand.Intn(10000)
 
 		// Return the random number in the response
 		c.JSON(http.StatusOK, gin.H{
@@ -30,4 +30,3 @@ func main() {
 	// Run the HTTP server
 	router.Run("0.0.0.0:8080")
 }
-
