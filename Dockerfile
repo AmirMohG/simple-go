@@ -1,4 +1,4 @@
-FROM golang:1.21-alpine AS builder
+FROM hub.hamdocker.ir/golang:1.21-alpine AS builder
 
 WORKDIR /app
 
